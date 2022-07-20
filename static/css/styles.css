@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #181818;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  overflow-x: hidden;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 130px;
+  margin: -130px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #181818;
+  padding: 50px;
+  z-index: 10;
+  border-bottom: 1px solid #201d22;
+}
+nav a:hover {
+  transition: 0.5s;
+  border-bottom: #666 1px solid;
+}
+nav a.active {
+  color: #666;
+  border-bottom: #666 1px solid;
+}
+hr {
+  border: none;
+  border-top: 2px solid #666;
+  color: #666;
+  width: 50px;
+}
+
+.page-top {
+  display: flex;
+}
+.page-left {
+  flex: 33%;
+  float: left;
+  text-align: center;
+  line-height: 20;
+}
+.page-center {
+  flex: 34%;
+}
+.page-right {
+  margin-top: 350px;
+  flex: 33%;
+  float: right;
+  text-align: right;
+}
+.page-right .contents {
+  margin: 100px 100px 0px 0px;
+}
+.page {
+  position: absolute;
+  top: 100%;
+}
+.extra-page {
+  position: absolute;
+  top: 10%;
+}
+
+.about {
+  display: flex;
+  margin-bottom: 300px;
+}
+.about-left {
+  margin-left: 150px;
+  flex: 50%;
+  float: left;
+}
+.about-right {
+  flex: 50%;
+  margin: 50px 155px 0px 50px;
+  background-image: radial-gradient(#201d22 3px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0px 0px;
+}
+
+.title {
+  margin: 0px 0px 5px 150px;
+}
+.projects {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 300px;
+}
+.proj-fill {
+  height: 75%;
+  margin: 20px 10px 40px 165px;
+  background-image: radial-gradient(#201d22 3px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0px 0px;
+}
+.proj-left {
+  flex: 50%;
+  float: left;
+}
+.proj-right {
+  flex: 50%;
+}
+.proj-left .box {
+  padding: 50px;
+  margin: 5px 0px 5px 150px;
+  background: #201d22;
+  border-radius: 10px;
+}
+.proj-right .box {
+  padding: 50px;
+  margin: 5px 150px 5px 5px;
+  background: #201d22;
+  border-radius: 10px;
+}
+.box h2 {
+  margin: 0px;
+}
+.projects .details {
+  text-transform: uppercase;
+  color: #666;
+}
+.projects .advertise {
+  margin: 100px 0px 0px 0px;
+}
+#more-pc {
+  display: block;
+}
+#more-mobile {
+  display: none;
+}
+
+.contact {
+  margin: 0px 0px 150px 150px;
+}
+.contact a {
+  border-bottom: 2px dashed #666;
+}
+a:hover {
+  color: #666;
+}
+button {
+  border: #201d22 1px solid;
+  background: transparent;
+  color: #fff;
+  padding: 20px 50px;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: #201d22;
+}
+footer {
+  border-top: #201d22 1px solid;
+  text-align: center;
+  padding: 50px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-home {
+  margin: -210px 0px 90px 0px; 
+  text-align: center;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-top {
+    display: block;
+  }
+  .page-left {
+    width: 100%;
+  }
+  .page-left h1 {
+    font-size: 35px;
+  }
+	.page-center {
+    display: none;
+  }
+  .page-right {
+    display: none;
+  }
+
+  .title {
+    margin: 25px;
+  }
+  
+  .about {
+    display: block;
+  }
+  .about-left {
+    margin: 25px;
+  }
+  .about-left p {
+    width: calc(100% - 25px);
+  }
+  .about-right {
+    margin: 25px;
+  }
+
+  .projects {
+    display: block;
+  }
+  .proj-left {
+    float: none;
+  }
+  .proj-left .proj-fill {
+    display: none;
+  }
+  #more-pc {
+    display: none;
+  }
+  #more-mobile {
+    display: block;
+  }
+  .box {
+    margin: 25px !important;
+  }
+
+  .contact {
+    margin: 25px;
+  }
+  .contact p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>kipteam.net</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://kit.fontawesome.com/697d2afc76.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <div class="page-top">
+    <div class="page-left">
+      <h1 id="title"></h1>
+    </div>
+
+    <div class="page-center">
+      
+    </div>
+
+    <div class="page-right">
+      <div class="contents" id="navbar1">
+        <a href="#about">01 ----- about</a> <br>
+        <a href="#projects">02 -- projects</a> <br>
+        <a href="#contact">03 --- contact</a> <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar" id="navbar2" data-aos="fade-left">
+    <nav>
+      <a href="#about">About</a> &emsp;
+      <a href="#projects">Projects</a> &emsp;
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="page">
+    <section id="about">
+      <div class="about">
+        <div class="about-left">
+          <h3>About</h3>
+          <hr align="left">
+          <p>
+            Hi my name is Torben but I am mostly known as Kipteam. <br>
+            I am a Belgian middle school student with a proud 15 years of life experience. <br> 
+            I am a sparetime developer, learning new skills every day. These skills are mostly focussed on web development, Discord bot development and a little bit of game development. I like to use Python, HTML, CSS, JS, C#, Java and BDFD which none of those I have mastered. <br>
+            I am the proud owner of several Discord bots and some awesome websites. <br>
+            When I am not programming I like to play games, make pixel art, moderate and chat on Discord and rarely, I like to touch grass. 
+          </p>
+        </div>
+        <div class="about-right">
+          &emsp;
+        </div>
+      </div>
+    </section>
+  
+    <section id="projects">
+      <div class="title">
+        <h3>Projects</h3>
+        <hr align="left">
+      </div>
+      <div class="projects">
+        
+        <div class="proj-left">
+          <div class="box" data-aos="fade-right">
+            <p class="details">
+              December 27, 2021
+            </p>
+            
+            <h2>Gluo</h2>
+            <p>
+              A project I am working on.
+            </p>
+          </div>
+          <div class="box" data-aos="fade-right" id="more-pc">
+            <a href="/projects"><h3>Check out more projects <i class="fas fa-external-link-alt"></i></h3></a>
+          </div>
+          <div class="proj-fill">
+            &emsp;
+          </div>
+        </div>
+        
+  
+        <div class="proj-right">
+          <div class="box" data-aos="fade-left">
+            <p class="details">
+              December 14, 2021
+            </p>
+            
+            <h2>Socotra</h2>
+            <p>
+              A beautiful tree themed Discord bot that I've spent too much time working on.
+            </p>
+            
+            <p class="advertise">
+              <a href="https://www.socotra-bot.ga/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a> &emsp;
+              <a href="https://discord.com/oauth2/authorize?client_id=793180369490411561&scope=bot%20applications.commands&permissions=8" target="_blank">Invite <i class="fas fa-external-link-alt"></i></a>
+            </p>
+          </div>
+          <div class="box" data-aos="fade-left">
+            <p class="details">
+              December 5, 2021
+            </p>
+            
+            <h2>Ultimate leveling</h2>
+            <p>
+              A highly customizable, userfriendly, free solution for Discord leveling.
+            </p>
+            
+            <p class="advertise">
+              <a href="https://www.ultimateleveling.ga/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a> &emsp;
+              <a href="https://discord.com/oauth2/authorize?client_id=839561965252247554&permissions=8&scope=bot" target="_blank">Invite <i class="fas fa-external-link-alt"></i></a>
+            </p>
+          </div>
+
+          <div class="box" data-aos="fade-right" id="more-mobile">
+            <a href="/projects"><h3>Check out more projects <i class="fas fa-external-link-alt"></i></h3></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="title">
+        <h3>Contact</h3>
+        <hr align="left">
+      </div>
+      <div class="contact">
+        <p>
+          ● &emsp; Contact me on <a href="https://discord.com/users/675316333780533268" target="_blank">Discord</a> <br>
+          ● &emsp; Join one of my many <a href="/servers">Discord servers</a> <br>
+          ● &emsp; Feel free to send me an <a href="mailto:toro.een@gmail.com">email</a> <br>
+          ● &emsp; Check out my <a href="https://github.com/ToroEen" target="_blank">github</a> <br>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Entirely made by <a href="">Kipteam</a> © 2021-2022
+    </footer>
+  </div>
+<script>
+  AOS.init();
+  
+  var app = document.getElementById('title');
+  
+  var typewriter = new Typewriter(app, {
+    loop: true,
+    delay: 75,
+  });
+
+  typewriter
+    .pauseFor(500)
+    .typeString('Hi, I am Kipteam')
+    .pauseFor(1000)
+    .deleteChars(9)
+    .start();
+  
+  window.onscroll = function() {scroll()};
+
+  var navbar1 = document.getElementById("navbar1");
+  var navbar2 = $('#navbar2');
+  var sticky = navbar1.offsetTop;
+  let navbarLinks = document.querySelectorAll("nav a");
+  
+  function scroll() {
+    if (window.pageYOffset >= sticky + 250) {
+      navbar2.css({'display':'block'});
+      navbar2.addClass('aos-animate');
+    } else {
+      navbar2.css({'display':'none'});
+      navbar2.removeClass('aos-animate');
+    }
+    
+    navbarLinks.forEach(link => {
+      let scrollPos = window.scrollY;
+      let section = document.querySelector(link.hash);
+      if (scrollPos  > section.offsetTop && scrollPos  < section.offsetTop + section.offsetHeight ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+</script>
+  
+</body>
+</html>
